@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+
+<generatorConfiguration>
+    <properties resource="mybatis/init.properties"/>
+
+    <classPathEntry location="${classPathEntry}"/>
+    <context id="context1">
+
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="suppressAllComments" value="false"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="${driverClass}"
+                        connectionURL="${connectionURL}"
+                        userId="${user}"
+                        password="${password}"/>
+        <!-- 生成模型的包名和位置-->
+        <javaModelGenerator targetPackage="${basePackage}.mybatis.vo" targetProject="${voPackage}"/>
+        <!-- 生成映射文件的包名和位置-->
+        <sqlMapGenerator targetPackage="${mapperPackage}" targetProject="${mapperProject}"/>
+        <!-- 生成DAO的包名和位置-->
+        <javaClientGenerator targetPackage="${basePackage}.mybatis.mapper" targetProject="${targetProject}"
+                             type="XMLMAPPER"/>
+
+        <!--        <table schema="x-energy-db" tableName="t_sys_menu" domainObjectName="Menu">-->
+        <!--            <generatedKey column="MENU_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_menu_item" domainObjectName="MenuItem">-->
+        <!--            <generatedKey column="ITEM_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_stand" domainObjectName="StandData">-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_collect" domainObjectName="CollectData">-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_station" domainObjectName="StationData">-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_stand_basic" domainObjectName="StandBasicData"/>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_department" domainObjectName="Department">-->
+        <!--            <generatedKey column="DEP_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_opr_info" domainObjectName="OprInfo">-->
+        <!--            <generatedKey column="OPR_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_opr_info_login_log" domainObjectName="OprInfoLoginLog">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_org_info" domainObjectName="OrgInfo">-->
+        <!--            <generatedKey column="ORG_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_role" domainObjectName="Role">-->
+        <!--            <generatedKey column="ROLE_ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_role_item_rel" domainObjectName="RoleItemRel"/>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_opr_rol_rel" domainObjectName="OprRolRel"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_price" domainObjectName="Price"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_basic" domainObjectName="DataBasic">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_basic_bak" domainObjectName="DataBasicBak"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_collect_day" domainObjectName="CollectDataDay">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="t_sys_company" domainObjectName="Company">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--<table schema="x-energy-db" tableName="data_valve" domainObjectName="Valve"/>-->
+        <table schema="x-energy-db" tableName="data_valve_company" domainObjectName="ValveCompany"/>
+        <!--        <table schema="x-energy-db" tableName="data_weather" domainObjectName="WeatherData">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_weather_stal" domainObjectName="WeatherDataStal">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+        <!--        <table schema="x-energy-db" tableName="data_water_temperature" domainObjectName="WaterTemperatureData"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_para" domainObjectName="PredictData"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_para_cul" domainObjectName="PredictHistoryData"/>-->
+
+        <!--        <table schema="x-energy-db" tableName="data_group" domainObjectName="GroupData"/>-->
+        <!--        <table schema="x-energy-db" tableName="data_predict_history" domainObjectName="PredictHistory">-->
+        <!--            <generatedKey column="ID" sqlStatement="MySql" identity="true"/>-->
+        <!--        </table>-->
+
+    </context>
+</generatorConfiguration>

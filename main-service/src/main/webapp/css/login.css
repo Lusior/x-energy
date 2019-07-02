@@ -1,0 +1,166 @@
+body,html{
+    font-family:'Microsoft YaHei' ,'Open Sans', sans-serif;
+    padding: 0px !important;
+    margin: 0px !important;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+ul li {
+    list-style: none;
+}
+a, a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+}
+::selection {
+
+    background: #FF6C60;
+    color: #fff;
+}
+::-moz-selection {
+    background: #FF6C60;
+    color: #fff;
+}
+
+input{
+    border: none;
+}
+body{
+    background: url(../img/login_bg.png) no-repeat center center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+#main-content{
+    width: 990px;
+    height: 900px;
+    position: relative;
+    margin: 0 auto;
+}
+.title{
+    font-size: 44px;
+    color: #fff;
+    text-align: center;
+    text-shadow: -2px 2px 2px rgb(59,19,129);
+    padding: 80px 0 0 0;
+}
+.title:before{
+    width: 300px;
+    height: 15px;
+    content: "";
+    background: url(../img/line_left.png) no-repeat;
+    display: inline-block;
+    margin: 0 20px 0 0 ;
+}
+.title:after{
+    width: 300px;
+    height: 15px;
+    content: "";
+    background: url(../img/line_right.png) no-repeat;
+    display: inline-block;
+    margin: 0 0 0 20px
+}
+.center-content{
+    width: 990px;
+    height: 340px;
+    position: absolute;
+    top: 222px;
+    left: 0;
+}
+.center-img{
+    width: 607px;
+}
+.center-img img{
+    height: 100%;
+}
+.login-wrap{
+    width: 298px;
+    padding: 16px 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.login-wrap h3{
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin:0;
+    padding: 0;
+}
+.login-wrap ul {
+    padding: 0;
+}
+.login-wrap ul li{
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #e0e0e0;
+    margin: 0 0 20px 0;
+    border-radius: 4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    -o-border-radius:4px;
+    font-size: 16px;
+    padding: 10px 10px 10px 10px;
+}
+.login-wrap ul li i{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+    margin: 0 10px 0 0;
+}
+.login-wrap ul li input{
+    outline: none;
+}
+.login-wrap ul li input[placeholder]{
+    font-size: 16px;
+}
+.login-wrap ul li.jigou i{
+    background: url(../img/icon_rganization.png) no-repeat center center ;
+}
+.login-wrap ul li.username i{
+    background: url(../img/icon_user.png) no-repeat center center ;
+}
+.login-wrap ul li.pwd i{
+    background: url(../img/icon_pwd.png) no-repeat center center ;
+}
+.login-wrap ul li.code{
+    width:150px;
+    position: relative;
+}
+.login-wrap ul li.code input{
+    width: 65px;
+}
+.login-wrap ul li .codeImg{
+    width: 100px;
+    height: 44px;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: -125px;
+    border:1px solid #000;
+}
+.login-wrap ul li .codeImg img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.login-wrap ul li.code i{
+    background: url(../img/icon_verification.png) no-repeat center center ;
+}
+.login-wrap .submit{
+    width: 100%;
+    height: 40px;
+    background: #3b9ccb;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    margin: 30px 0 0 0 ;
+}
